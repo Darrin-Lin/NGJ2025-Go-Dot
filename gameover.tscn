@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqqn86eyttmda"]
+
+[ext_resource type="Script" uid="uid://c3g65tuxrr2xb" path="res://retry.gd" id="1_40baj"]
+[ext_resource type="Script" uid="uid://kxf6r47j8vjy" path="res://showScore.gd" id="2_tpdqf"]
+
+[node name="Gameover2" type="Node2D"]
+script = ExtResource("1_40baj")
+
+[node name="Game Over" type="Label" parent="."]
+offset_left = -332.0
+offset_top = -364.0
+offset_right = 336.0
+offset_bottom = -186.0
+theme_override_font_sizes/font_size = 120
+text = "Game Over"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Button" type="Button" parent="."]
+offset_left = -84.0
+offset_top = 182.0
+offset_right = 86.0
+offset_bottom = 259.0
+theme_override_font_sizes/font_size = 50
+text = "Retry"
+
+[node name="score" type="Label" parent="."]
+offset_right = 8.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 80
+script = ExtResource("2_tpdqf")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
