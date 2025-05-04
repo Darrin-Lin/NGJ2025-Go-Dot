@@ -6,15 +6,18 @@
 position = Vector2(10, 6)
 
 [node name="dot" type="Node2D" parent="."]
-position = Vector2(62, 136.5)
+position = Vector2(-10, -6)
 scale = Vector2(0.546875, 0.507812)
 script = ExtResource("1_ots34")
 
 [node name="Game start" type="Label" parent="."]
-offset_left = 331.0
-offset_top = 232.0
-offset_right = 657.0
-offset_bottom = 315.0
+offset_left = -173.0
+offset_top = -48.0
+offset_right = 153.0
+offset_bottom = 35.0
 theme_override_font_sizes/font_size = 60
 text = "Game Start"
 horizontal_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-10, -6)
