@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://by8xknlddkpl8"]
+
+[ext_resource type="Script" uid="uid://v8m11bqjpbjp" path="res://dot.gd" id="1_ots34"]
+
+[node name="point_part" type="Node2D"]
+position = Vector2(10, 6)
+
+[node name="dot" type="Node2D" parent="."]
+position = Vector2(62, 136.5)
+scale = Vector2(0.546875, 0.507812)
+script = ExtResource("1_ots34")
+
+[node name="Game start" type="Label" parent="."]
+offset_left = 331.0
+offset_top = 232.0
+offset_right = 657.0
+offset_bottom = 315.0
+theme_override_font_sizes/font_size = 60
+text = "Game Start"
+horizontal_alignment = 1
